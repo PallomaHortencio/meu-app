@@ -11,7 +11,7 @@ const Cabecalho = () => {
     /* CSS in JS: estilos CSS embutidos no meio do JavaScript */
 
     /* CSS inline (usa propriedade style e sintaxe de objeto) */
-    <header style={{ backgroundColor: "lightblue", textAlign: "center]" }}>
+    <header style={{ backgroundColor: "lightblue", textAlign: "center" }}>
       <h1 style={estilos}>Inerface React</h1>
       <Menu />
     </header>
