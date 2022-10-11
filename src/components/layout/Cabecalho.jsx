@@ -1,11 +1,36 @@
+import styled from "styled-components";
 import Menu from "../../Menu";
+
+const periodo = "noturno";
+
+/* Tagged Template para uso com styled components: `` */
+const StyledCabecalho = styled.header`
+  background-color: ${periodo === "diurno" ? "lightblue" : "darkblue"};
+  text-align: center;
+
+  h1 {
+    color: red;
+  }
+
+  p {
+    font-weight: bold;
+    color: blue;
+    font-size: 2rem;
+
+    &:hover {
+      color: red;
+      cursor: pointer;
+    }
+  }
+`;
 
 const Cabecalho = () => {
   return (
-    <header>
+    <StyledCabecalho>
       <h1>Inerface React</h1>
       <Menu />
-    </header>
+      <p>Teste</p>
+    </StyledCabecalho>
   );
 };
 
