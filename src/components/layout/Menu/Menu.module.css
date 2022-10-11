@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: rgb(116, 116, 116);
+  justify-content: space-around;
+}
