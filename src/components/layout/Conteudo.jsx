@@ -14,9 +14,9 @@ const Conteudo = () => {
             ipsa officiis repellat vitae sed.
           </p>
 
-          <Artigo />
-          <Artigo />
-          <Artigo />
+          <Artigo>Este é um texto do primeiro artigo... </Artigo>
+          <Artigo>Este é um texto do segundo artigo... </Artigo>
+          <Artigo>Este é um texto do terceiro artigo... </Artigo>
         </section>
       </main>
     </>
