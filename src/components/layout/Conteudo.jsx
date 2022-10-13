@@ -1,10 +1,28 @@
 import Artigo from "../Artigo";
 
 const Conteudo = () => {
-  /* (1) Crie um array com o nome de 3 cursos */
-  /* (2) Dentro das chamadas do artigos, passe como uma nova prop chamada curso, o nome de cada curso */
+  const artigos = [
+    {
+      titulo: "Artigo 1",
+      subtitulo: "Este é o texto do primeiro artigo...",
+      texto: "Este é o conteúdo do artigo um...",
+      cursos: "HTML",
+    },
 
-  var cursos = ["HTML", "CSS", "JavaScript"];
+    {
+      titulo: "Artigo 2",
+      subtitulo: "Este é o texto do segundo artigo...",
+      texto: "Este é o conteúdo do artigo dois...",
+      cursos: "CSS",
+    },
+
+    {
+      titulo: "Artigo 3",
+      subtitulo: "Este é o texto do terceiro artigo...",
+      texto: "Este é o conteúdo do artigo três...",
+      cursos: "JavaScript",
+    },
+  ];
 
   return (
     <>
@@ -19,27 +37,17 @@ const Conteudo = () => {
             ipsa officiis repellat vitae sed.
           </p>
 
-          <Artigo
-            titulo="Artigo 1"
-            subtitulo="Subtitulo do artigo 1"
-            cursos={cursos[0]}
-          >
-            Este é um texto do primeiro artigo...
-          </Artigo>
-          <Artigo
-            titulo="Artigo 2"
-            subtitulo="Subtitulo do artigo 2"
-            cursos={cursos[1]}
-          >
-            Este é um texto do segundo artigo...
-          </Artigo>
-          <Artigo
-            titulo="Artigo 3"
-            subtitulo="Subtitulo do artigo 3"
-            cursos={cursos[2]}
-          >
-            Este é um texto do terceiro artigo...
-          </Artigo>
+          {artigos.map((artigo) => {
+            return (
+              <Artigo
+                titulo={artigo.titulo}
+                subtitulo={artigo.subtitulo}
+                cursos={artigo.cursos}
+              >
+                {artigo.texto}
+              </Artigo>
+            );
+          })}
         </section>
       </main>
     </>
