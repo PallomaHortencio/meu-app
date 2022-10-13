@@ -1,4 +1,4 @@
-const Artigo = (props, cursos) => {
+const Artigo = (props) => {
   return (
     <article>
       <h3>{props.titulo}</h3>
