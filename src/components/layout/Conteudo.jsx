@@ -40,14 +40,24 @@ const Conteudo = () => {
             ipsa officiis repellat vitae sed.
           </p>
 
-          {artigos.map((artigo) => (
+          {/*  {artigos.map((artigo) => (
             <Artigo
-              key={artigo.id}
+              key={artigo}
               titulo={artigo.titulo}
               subtitulo={artigo.subtitulo}
               cursos={artigo.cursos}
             >
-              {artigo.texto}
+              {artigo.texto} */}
+
+          {/* Aplicando destructuring (desestrutração no objeto) */}
+          {artigos.map(({ id, titulo, subtitulo, cursos, texto }) => (
+            <Artigo
+              key={id}
+              titulo={titulo}
+              subtitulo={subtitulo}
+              cursos={cursos}
+            >
+              {texto}
             </Artigo>
           ))}
         </section>
