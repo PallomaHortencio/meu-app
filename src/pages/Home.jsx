@@ -3,7 +3,7 @@ import Artigo from "../components/Artigo";
 const Home = () => {
   return (
     <>
-      <h2>Página HOME</h2>
+      <h2>Página HOMEeeee</h2>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci qui
         exercitationem ea delectus, rem omnis, odio minus modi commodi dicta
